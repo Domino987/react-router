@@ -544,7 +544,7 @@ export function useRoutes(
   return useRoutes_(routes, basename);
 }
 
-let missingTrailingSplatWarnings: { [key: string]: boolean } = {};
+let missingTrailingSplatWarnings: Record<string, boolean> = {};
 function warnAboutMissingTrailingSplatAt(
   pathname: string,
   cond: boolean,
